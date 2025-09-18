@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { FiLink, FiUsers, FiPlus, FiUser, FiGithub } from 'react-icons/fi';
 import { HiSparkles } from 'react-icons/hi';
-import Links from './components/Links';
-import SocialMedia from './components/SocialMedia';
+import Links from './Components/Links';
+import SocialMedia from './Components/SocialMedia';
 import myImage from './assets/my-img.jpg';
 
 function App() {

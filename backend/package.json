@@ -1,0 +1,20 @@
+{
+  "name": "link-manager-backend",
+  "version": "1.0.0",
+  "description": "Simple link manager backend with MongoDB",
+  "main": "simple-server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node simple-server.js",
+    "dev": "node simple-server.js"
+  },
+  "keywords": ["links", "mongodb", "express", "api"],
+  "author": "Hritik Sharma",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  }
+}

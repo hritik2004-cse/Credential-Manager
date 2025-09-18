@@ -19,7 +19,9 @@ const SocialMedia = () => {
     url: ''
   });
 
-  const API_URL = 'http://localhost:5000/api';
+  const API_URL = process.env.NODE_ENV === 'production' 
+    ? 'https://credentialmanager-3r8nhetgr-hritik-sharma-s-projects.vercel.app/api'
+    : 'http://localhost:5000/api';
 
   // Popular social media platforms with React Icons
   const platforms = [

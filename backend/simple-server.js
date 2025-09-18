@@ -19,7 +19,10 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/linkmanager')
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/linkmanager';
+console.log('🔗 Connecting to MongoDB with URI:', mongoURI.replace(/\/\/([^:]+):([^@]+)@/, '//***:***@'));
+
+mongoose.connect(mongoURI)
   .then(() => console.log('📊 MongoDB connected successfully'))
   .catch(err => console.error('❌ MongoDB connection error:', err));
 
